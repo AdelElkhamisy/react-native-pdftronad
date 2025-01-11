@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "preandroid": "cd node_modules/react-native-pdftron && npm start && cd ../../",
+    "preandroid": "cd node_modules/react-native-pdftronad && npm start && cd ../../",
     "android": "react-native run-android",
-    "preios": "cd node_modules/react-native-pdftron && npm start && cd ../../",
+    "preios": "cd node_modules/react-native-pdftronad && npm start && cd ../../",
     "ios": "react-native run-ios",
-    "prestart": "cd node_modules/react-native-pdftron && npm start && cd ../../",
+    "prestart": "cd node_modules/react-native-pdftronad && npm start && cd ../../",
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint ."
@@ -16,7 +16,7 @@
     "deprecated-react-native-prop-types": "^2.3.0",
     "react": "^18.0.0",
     "react-native": "^0.69.1",
-    "react-native-pdftron": "github:ApryseSDK/pdftron-react-native"
+    "react-native-pdftronad": "github:ApryseSDK/pdftron-react-native"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

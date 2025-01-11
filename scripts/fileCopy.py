@@ -5,7 +5,7 @@ import shutil
 # NOTE: this script is only used to copy files under android, ios and src folders.
 
 REPO_DIR = os.path.dirname(os.path.dirname(__file__))
-MODULE_DIR = os.path.join(REPO_DIR, 'example', 'node_modules', 'react-native-pdftron')
+MODULE_DIR = os.path.join(REPO_DIR, 'example', 'node_modules', 'react-native-pdftronad')
 
 COPY_FOLDER_LIST = ['android', 'ios', 'src']
 

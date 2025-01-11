@@ -48,7 +48,7 @@ The release can be found here: https://github.com/ApryseSDK/pdftron-react-native
 
    - #### Through pdftron's github repo:
 
-     In `MyApp` folder, install `react-native-pdftron` by calling:
+     In `MyApp` folder, install `react-native-pdftronad` by calling:
 
      ```shell
      yarn add github:ApryseSDK/pdftron-react-native
@@ -85,7 +85,7 @@ The release can be found here: https://github.com/ApryseSDK/pdftron-react-native
    ```diff
    android {
        ndkVersion rootProject.ext.ndkVersion
-   
+
        compileSdkVersion rootProject.ext.compileSdkVersion
 
        defaultConfig {
@@ -107,7 +107,7 @@ The release can be found here: https://github.com/ApryseSDK/pdftron-react-native
        ...
    }
    ```
-   
+
 2. In your `android/gradle.properties` file, add the following line:
    ```diff
    # Add the PDFTRON_LICENSE_KEY variable here.
@@ -166,7 +166,9 @@ The release can be found here: https://github.com/ApryseSDK/pdftron-react-native
 6. Finally in the root project directory, run `react-native run-android`.
 
 ### iOS
+
 #### Note — January 2022
+
 **There is a new podspec file to use when integrating the PDFTron React Native Wrapper for iOS:**
 **https://pdftron.com/downloads/ios/react-native/latest.podspec**
 
@@ -174,13 +176,13 @@ The release can be found here: https://github.com/ApryseSDK/pdftron-react-native
 
 1. Open `Podfile` in the `ios` folder, add the following line to the `target 'MyApp' do ... end` block:
 
-    ```
-    target 'MyApp' do
-        # ...
-        pod 'PDFNet', podspec: 'https://pdftron.com/downloads/ios/react-native/latest.podspec'
-        # ...
-    end
-    ```
+   ```
+   target 'MyApp' do
+       # ...
+       pod 'PDFNet', podspec: 'https://pdftron.com/downloads/ios/react-native/latest.podspec'
+       # ...
+   end
+   ```
 
 2. In the `ios` folder, run `pod install`.
 3. Replace `App.js` (or `App.tsx`) with what is shown for [NPM](#Usage-NPM) or [GitHub](#Usage-Github)
@@ -213,7 +215,7 @@ import {
   Alert,
 } from "react-native";
 
-import { DocumentView, RNPdftron } from "react-native-pdftron";
+import { DocumentView, RNPdftron } from "react-native-pdftronad";
 
 type Props = {};
 export default class App extends Component<Props> {
@@ -340,7 +342,7 @@ const styles = StyleSheet.create({
   ```javascript
   document = "content://...";
   ```
-  
+
 ## Usage-NPM
 
 If you installed through NPM package, Replace `App.js` (or `App.tsx` if you are [using TypeScript](#typescript)) with the code below.
@@ -496,6 +498,7 @@ const styles = StyleSheet.create({
   ```javascript
   document = "content://...";
   ```
+
 ## TypeScript
 
 PDFTron React Native introduced support for TypeScript in version 3.0.0. This update mainly benefits those who already use TypeScript in their applications. It also provides certain benefits to all customers, including those who use JavaScript without TypeScript.
